@@ -1,0 +1,9 @@
+.navbar-nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.nav-item{
+    display: inline-block;
+}
+
