@@ -1,5 +1,5 @@
 <div class="card">
-    <a href="" class="row">
+    <div class="row" (click)="itemClicked()">
         <div class="col">
             <h4>{{recipe.name}}</h4>
             <p>{{recipe.description}}</p>
@@ -7,5 +7,5 @@
         <span class="col">
             <img src="{{recipe.imagePath}}" alt="" class="img-responsive">
         </span>
-    </a>
+    </div>
 </div>

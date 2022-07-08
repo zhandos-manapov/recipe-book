@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TitleStrategy } from '@angular/router';
 import { Ingredient } from '../shared/ingredient.model';
 
 @Component({
@@ -16,6 +17,10 @@ export class ShoppingListComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  addItem(eventData: Ingredient){
+    this.ingredients.push(eventData);
   }
 
 }
