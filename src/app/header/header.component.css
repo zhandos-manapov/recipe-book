@@ -1,9 +1,13 @@
-.navbar-nav{
+/* .navbar-nav{
     display: flex;
     justify-content: space-between;
     width: 100%;
-}
-.nav-item{
-    display: inline-block;
+} */
+
+.dropdown-menu {
+    min-width: 0;
 }
 
+.navbar{
+    padding: 10px 20px;
+}
