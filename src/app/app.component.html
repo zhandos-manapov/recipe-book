@@ -1,7 +1,6 @@
-<app-header (navItemClicked)="handleEvent($event)"></app-header>
+<app-header></app-header>
 <div class="row">
   <div class="col-md-12">
-    <app-recipes *ngIf="currentWindow === 'recipes' "></app-recipes>
-    <app-shopping-list *ngIf="currentWindow === 'shoppingList'"></app-shopping-list>
+    <router-outlet></router-outlet>
   </div>
 </div>
