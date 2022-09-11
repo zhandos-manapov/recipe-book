@@ -7,7 +7,7 @@ import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  @Output() navItemClicked = new EventEmitter<string>();
+  @Output() navItemClicked = new EventEmitter<string>()
 
   constructor() { }
 
@@ -15,6 +15,6 @@ export class HeaderComponent implements OnInit {
   }
 
   onNavItemClick(eventData: string){
-    this.navItemClicked.emit(eventData);
+    this.navItemClicked.emit(eventData)
   }
 }

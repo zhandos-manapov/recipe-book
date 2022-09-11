@@ -10,7 +10,8 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class RecipeItemComponent implements OnInit {
 
-  @Input() recipe!: Recipe;
+  @Input() recipe!: Recipe
+  @Input() recipeId!: number
 
   constructor(private recipeService: RecipeService, private route: ActivatedRoute) { }
 
