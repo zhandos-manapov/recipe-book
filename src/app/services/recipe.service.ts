@@ -1,5 +1,5 @@
 import { Subject } from 'rxjs';
-import { Recipe } from '../recipes/recipe.model';
+import { Recipe } from '../modules/recipes/recipe.model';
 
 export class RecipeService {
 
