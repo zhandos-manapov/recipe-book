@@ -2,6 +2,7 @@ import { HttpClient, HttpErrorResponse, HttpResponse } from '@angular/common/htt
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 import { catchError, throwError, tap, BehaviorSubject } from 'rxjs';
+import { environment } from 'src/environments/environment';
 import { User } from './user.model';
 
 
@@ -19,8 +20,8 @@ export interface AuthResponseData {
 })
 export class AuthService {
 
-  private signUpUrl = 'https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyDN0XvGl8V3wNPniQ6YRUNrHrOsGIfhXv8'
-  private signInUrl = 'https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyDN0XvGl8V3wNPniQ6YRUNrHrOsGIfhXv8'
+  private signUpUrl = `https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=${environment.firebaseAPIKey}`
+  private signInUrl = `https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=${environment.firebaseAPIKey}`
   private tokenExpirationTimer!: ReturnType<typeof setTimeout> | null;
 
   user$ = new BehaviorSubject<User | null>(null)
